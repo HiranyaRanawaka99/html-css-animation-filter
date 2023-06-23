@@ -123,17 +123,26 @@
 /*7*/
   .ex-7-img {
     width: 500px;
+    transition: 3s;
   }
 
   .ex-7-img:hover {
-    filter: grayscale(1);
-    transition: 3s;
+    filter: grayscale(1) sepia(0.5);
   }
 
 /*8*/
   .ex-8-img {
     width: 500px;
+    transition: 3s;
   }
+
+  .ex-8-img:hover {
+    border-radius: 20px;
+    filter: grayscale(0.5) sepia(0.4);
+
+
+  }
+
 
 /*9*/
   
