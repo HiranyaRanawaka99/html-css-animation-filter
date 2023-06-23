@@ -159,7 +159,7 @@
   .well {
     font-size: 5rem;
   } 
-  
+
   /*10*/
   .ex-10-icon {
     animation-name: spin;
@@ -175,6 +175,23 @@
 }
 
   /*11*/
+  .ex-11-icon:hover {
+    animation-name: spin-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+
+@keyframes spin-1 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
   /*12*/
 
