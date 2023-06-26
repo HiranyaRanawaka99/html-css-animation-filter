@@ -170,7 +170,7 @@
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /*si preferisce sempre specificare la posizione di partenza e di arrivo*/
     }
 
     100% {
@@ -197,6 +197,53 @@
     }
 }
   
-/*12*
+/*12*/
 
-/**/
+/*scrivere due animazioni che vanno a traslare i due div*/
+
+.ex-12-top-white {
+  animation-name: slide-ex-12-top;
+  animation-name: 2s;
+  animation-timing-function: linear;
+
+}
+
+.ex-12-button:hover .ex-12-top-white { 
+  animation-name: slide-ex-12-top;
+}
+
+@keyframes slide-ex-12-top {
+  0% {
+    top: -10px;
+    left: 30%;
+  }
+  50% {
+    left: 55%;  /*top rimane invariato, perciò non c'è bisognno di specificarlo, si preferisce scrivere solo la proprietà su cui lavoro*/
+  }
+  100% {
+    top: -10px;
+    left: 30%;
+  }
+}
+
+.ex-12-bottom-white {
+  animation-name: slide-ex-12-bottom;
+  animation-name: 2s;
+  animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white { 
+  animation-name: slide-ex-12-bottom;
+}
+
+@keyframes slide-ex-12-bottom {
+  0% {
+    right: 10%;
+  }
+  50% {
+    right: 55%;
+  }
+  100% {
+    right: 10%;
+  }
+}
